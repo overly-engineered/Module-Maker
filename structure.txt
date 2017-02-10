@@ -1,0 +1,34 @@
+<ModuleMaker>
+	<Menu>
+		<HomeButton />
+		<ModuleDropDown />
+		<SiteDropDown />
+	</Menu>
+	<ModuleList>
+		<ModuleItem />
+	</ModuleList>
+	<MainSection>
+		<ModuleView>
+			<ModuleDemo>
+				<Card />
+				<Feature />
+				<Hero />
+				<MenuPanel />
+				<Panel />
+				<PanelReveal />
+				<ProductOfTheWeek />
+				<WhatsTrending />
+			</ModuleDemo>
+		</ModuleView>
+		<ModuleEdit>
+			<CopyEdit />
+			<CtaEdit />
+			<ImageEdit />
+			<RoundelEdit>
+				<RoundelType />
+			</RoundelEdit>
+		</MoudleEdit>
+	</MainSection>
+	<CodeModal />
+	<SignIn />
+</ModuleMaker>

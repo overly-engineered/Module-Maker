@@ -1,0 +1,22 @@
+window green center
+
+window green bottom
+
+window third
+
+window quarter
+
+window strip two thirds
+
+window strip third
+
+tabs??????????????????
+
+
+
+
+
+//TODO
+
+
+MAKE PANELS WORK WITHOUT HEIGHT OR ANY OF THAT BULLSHIT

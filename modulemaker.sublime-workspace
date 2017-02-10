@@ -1,0 +1,951 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"multi",
+				"multiCta"
+			],
+			[
+				"slide",
+				"slideDown\t.slideDown()"
+			],
+			[
+				"Categor",
+				"CategoryBannerOneColumn"
+			],
+			[
+				"current",
+				"currentContent"
+			],
+			[
+				"ctaTe",
+				"ctaTest"
+			],
+			[
+				"copy",
+				"copyTheCode"
+			],
+			[
+				"curr",
+				"currentContent"
+			],
+			[
+				"create",
+				"createBody"
+			],
+			[
+				"lik",
+				"ctaLink"
+			],
+			[
+				"conte",
+				"contentStyle"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"fotn",
+				"font-family"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"ca",
+				"uppercase"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"sliderT",
+				"sliderTitleArrayCount"
+			],
+			[
+				"scrol",
+				"scrollTop\t.scrollTop()"
+			],
+			[
+				"out",
+				"outerHeight\t.outerHeight()"
+			],
+			[
+				"off",
+				"offset\t.offset()"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"scot",
+				"scotland"
+			],
+			[
+				"flav",
+				"flavourMap"
+			],
+			[
+				"Sw",
+				"Swedish"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"toolt",
+				"tooltipArray"
+			],
+			[
+				"data",
+				"data-tooltip"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"on",
+				"onclick\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/src/js/components/ModuleMaker.js",
+			"settings":
+			{
+				"buffer_size": 13933,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/src/js/components/modules/SiteWideStrip.js",
+			"settings":
+			{
+				"buffer_size": 2607,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/src/js/components/modules/SitewideStripOffers.js",
+			"settings":
+			{
+				"buffer_size": 1096,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/src/js/components/ModuleDemo.js",
+			"settings":
+			{
+				"buffer_size": 8280,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/tpujpett/Desktop/reactmaker",
+		"/Users/tpujpett/Desktop/reactmaker/app",
+		"/Users/tpujpett/Desktop/reactmaker/app/css",
+		"/Users/tpujpett/Desktop/reactmaker/app/src",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules"
+	],
+	"file_history":
+	[
+		"/Users/tpujpett/Desktop/reactmaker/app/css/iframeFixs.css",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleView.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/MenuPanel.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/css/styles.css",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/Hero.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/Feature.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/ProductOfTheWeek.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/WhatsTrending.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/Menu.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/CategoryBannerVideo.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/PanelTab.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/PanelReveal.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/PanelLargeReveal.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleDemo.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/PanelCentral.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/Panel.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/PanelLarge.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/CategoryBanner.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/CategoryBannerOneColumn.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/CategoryBannerTwoColumn.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/MainSection.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/Card.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/index.html",
+		"/Users/tpujpett/Desktop/reactmaker/structure.txt",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/StringifyHtml.js",
+		"/Users/tpujpett/Desktop/reactmaker/firebase.json",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/SignIn.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/main.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleMaker.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleCategory.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleList.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleItem.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/VideoEdit.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/ModuleEdit.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/CopyEdit.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/TextLink.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/CtaEdit.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/CodeModal.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/CtaDetails.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/NewCtaButton.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/RemoveCtaButton.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/RoundelEdit.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/SiteDropDown.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/src/js/components/modules/MenuPanelCellar.js",
+		"/Users/tpujpett/Desktop/reactmaker/app/css/fontstyles.css",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/LHN-proposition-panels.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/menu.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/mixed-cases-gifts/cards.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/offers/cards.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero2.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/card-panel-mix.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/site-wide-banner.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/Whisky/card-panel-mix.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/offers/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/champagne-sparkling/card-panel-mix.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-spirits/card-panel-mix.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/trending-grid.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero1.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/inspiration-products/chateaupoujeaux.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/pre-mix-cards.html",
+		"/Users/tpujpett/Desktop/Christmas/snowstyles.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/feature-media.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/Whisky/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/mixed-cases-gifts/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/Whisky/media-asset.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/offers/hero-central.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/champagne-sparkling/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-spirits/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/inspiration-products/bosman.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero-central.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/feature-white-3.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/feature-white-4.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/feature-white-5.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/inspiration-products/cantena-malbec-product.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/inspiration-products/bredon.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero5.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/feature-media-2.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero3.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/25%Hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/feature.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/tabs.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/Whisky/feature.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/champagne-shop/cards-panels-mix.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/under-hero-banner.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/case-spread.html",
+		"/Users/tpujpett/Desktop/Pop up Template/monetate-values.txt",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/mixed-cases-gifts/tabs.html",
+		"/Users/tpujpett/Desktop/Pop up Template/Pop up template - incentive.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/pop up styles - incentive.css",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/Whisky/tasting/circle.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/christmas-drinks/customer favourites.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/bottle-size.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/case-box.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/feature-2.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/button-row.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/feature-slider.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/christmas-carousel.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/gifts/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/christmas-drinks/feature-white-right.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/gift-ideas/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/gift-ideas/feature-slider.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/gift-ideas/christmas-carousel.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/gift-ideas/feature.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/gift-ideas/feature-buttons.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/be-inspired/mulled-wine/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/black-friday-hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/feature-slider-1.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/footer.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/black-friday.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/champagne-sparkling/quiz.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/featured-brands.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/christmas-drinks/winter-pimms.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/global/awards-footer.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/christmas-drinks/cotm.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-spirits/cards.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/cards-3-col.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/offers/panels.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-spirits/feature-media.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/all-wines/cards.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/christmas/christmas-drinks/hero.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/feature-white-2.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/feature-white-1.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/discover-more/latest-features/food-wine-pairing/food-pairing-row1.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/button-row-quarters.html",
+		"/Users/tpujpett/Documents/02 Cellar/03 Code/Live/homepage/hero4.html"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/tpujpett/Documents/02 Cellar/03 Code/Live",
+			"",
+			"<open files>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"<p",
+			"class=",
+			"class",
+			"Panel",
+			"column",
+			"console.log(frame.style);",
+			"transformString",
+			"transfromString",
+			"element",
+			"/>",
+			"fontstyles",
+			"</i>",
+			"style",
+			"©2017",
+			".ctaDetails[0]",
+			"http",
+			"for=",
+			"for",
+			"class",
+			"exampleInputPassword1",
+			"exampleInputEmail1",
+			"handleModuleView",
+			"ModuleItem",
+			"videoThumbnail",
+			"CopyEdit",
+			"signpostreadmore",
+			"</i>",
+			"bodyCopy",
+			"class=",
+			"h5",
+			"/>",
+			"class",
+			"auto",
+			"currentContent",
+			"ctaDetails[0]",
+			"currentContent",
+			"class=",
+			"ctatext",
+			"class",
+			"moduleClass",
+			"lass=",
+			"class",
+			"Feature",
+			"br",
+			"roundel",
+			"menu-panel ",
+			"card",
+			"class",
+			"background",
+			";','",
+			"ModuleDropDown",
+			"Module",
+			"d-inline",
+			" key={this.props.key}",
+			"\"list-group-item list-group-item-action",
+			"dropdownMenuButton",
+			"heading",
+			"destinationPage",
+			"class",
+			"_hand",
+			"card",
+			"class",
+			" data-container=\".form-group\" data-toggle=\"popover\" data-placement=\"top\" data-content=\"I accept HTML\" data-trigger=\"focus\"",
+			"} data-container=\".form-group\" data-toggle=\"popover\" data-placement=\"top\" data-content=\"I accept HTML\" data-trigger=\"focus\"/>",
+			"ept HTML\"",
+			"subheading",
+			"class",
+			"fontstyl",
+			"../../",
+			"css/screen.css",
+			"<link type='text/css' rel='stylesheet' href='css/modules.css' />",
+			"<link type='text/css' rel='stylesheet' href='css/styles.css' /><",
+			"console",
+			"/case-type/southern",
+			"Southern Hemisphere case",
+			"French Red mixed case",
+			"Southern Hemisphere case",
+			"#",
+			"wine offers",
+			"/wine-offers/all-wine-offers",
+			"romo 12",
+			"Burns night",
+			"Burns night whiskies",
+			"/whisky",
+			"Magnums",
+			"/search/champagne+magnums",
+			"Gin",
+			"/spirits/spirit-type/gin",
+			"Red wine",
+			"Burns night",
+			"our best fine wine",
+			"Promo 14",
+			"Master of wine case",
+			"Favourties",
+			"whiskies",
+			"Fresh and fruity wines",
+			"/wines-under-10abv",
+			"o 14",
+			"Vegetarian wine",
+			"vegetarian wines",
+			"/vegetarian",
+			"Red wine",
+			"Burns night whiskies",
+			"Burns night whiskies ",
+			"sparkling wines",
+			"festive offers",
+			"Fresh fruity wines",
+			"Promo 14\"",
+			"Fresh Fruity",
+			"Bredon",
+			"Offers",
+			"class=\"card__image\"",
+			"qw",
+			"w</strong>",
+			"strong",
+			"Buy now",
+			" style=\"height: 249px;overflow: hidden;\"",
+			"Fledge and Co Red Blend",
+			"Fledge and Co Red Blend ",
+			"<span style=\"float:right;\" class=\"offersRed\">",
+			"4\"",
+			"Cellar clearance",
+			"/offers",
+			"Buy now, ",
+			"14",
+			"11",
+			"Talisker Skye",
+			"Whisky lovers"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<a href=\"/discover-more/latest-features/food-wine-perfect-pairings/food-and-wine-matching/sea-bass-recipe\" title=\"See Marianne",
+			"<a href=\"/discover-more/latest-features/food-wine-perfect-pairings/food-and-wine-matching/sushi-food-wine-pairing\" title=\"See Luiz Hara's",
+			"class=\"window--promo--bottom\"",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-luiz\" alt=\"Luiz Hara's Sushi food wine pairing recipe\">",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-marianne\" alt=\"Marianne Weekes's Sea Bass recipe\">",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-neil\" alt=\"Neil Davey's Slow roast lamb shoulder recipe\">",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-alexandra\" alt=\"Alexandra Coleman's Peanut Crunch Salad Recipe\">",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-guilia\" alt=\"Guilia Mule's Balinese Chicken Curry\">",
+			"<img src=\"//s7g10.scene7.com/is/image/waitrose/c-in-lf-fw-fwm-bl-bintu\" alt=\"Bintu Hardys African grilled prawns recipes\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/src/js/components/ModuleMaker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3580,
+								3580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2463.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/src/js/components/modules/SiteWideStrip.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								488,
+								488
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/src/js/components/modules/SitewideStripOffers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								905
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/src/js/components/ModuleDemo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5447,
+								5447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 733.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "modulemaker.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "flo",
+		"selected_items":
+		[
+			[
+				"flo",
+				"~/Documents/03 Florist/03 Code/Live/Florist.sublime-project"
+			],
+			[
+				"dsc",
+				"~/Documents/02 Cellar/03 Code/Cellar.sublime-project"
+			],
+			[
+				"ce",
+				"~/Documents/02 Cellar/03 Code/Cellar.sublime-project"
+			],
+			[
+				"fl",
+				"~/Documents/03 Florist/03 Code/Live/Florist.sublime-project"
+			],
+			[
+				"flor",
+				"~/Documents/03 Florist/03 Code/Live/Florist.sublime-project"
+			],
+			[
+				"ds",
+				"~/Documents/01 Templates/00 Code/00 Library/DS Core.sublime-project"
+			],
+			[
+				"cell",
+				"~/Documents/02 Cellar/03 Code/Cellar.sublime-project"
+			],
+			[
+				"cl",
+				"~/Documents/04 Gifts/03 Code/Live/Gifts.sublime-project"
+			],
+			[
+				"",
+				"~/Documents/02 Cellar/03 Code/Cellar.sublime-project"
+			],
+			[
+				"cel",
+				"~/Documents/02 Cellar/03 Code/Cellar.sublime-project"
+			],
+			[
+				"gift",
+				"~/Documents/04 Gifts/03 Code/Live/Gifts.sublime-project"
+			],
+			[
+				"tmg",
+				"~/Documents/08 TMG/03 Code/TMG.sublime-project"
+			],
+			[
+				"kit",
+				"~/Documents/06 Kitchen/03 Code/Kitchen.sublime-project"
+			],
+			[
+				"tm",
+				"~/Documents/08 TMG/03 Code/TMG.sublime-project"
+			],
+			[
+				"t",
+				"~/Documents/08 TMG/03 Code/TMG.sublime-project"
+			],
+			[
+				"k",
+				"~/Documents/06 Kitchen/03 Code/Kitchen.sublime-project"
+			],
+			[
+				"flori",
+				"~/Documents/03 Florist/03 Code/Live/Florist.sublime-project"
+			],
+			[
+				"ki",
+				"~/Documents/06 Kitchen/03 Code/Kitchen.sublime-project"
+			],
+			[
+				"gif",
+				"~/Documents/04 Gifts/03 Code/Live/Gifts.sublime-project"
+			],
+			[
+				"gifts",
+				"~/Documents/04 Gifts/03 Code/Live/Gifts.sublime-project"
+			],
+			[
+				"dsco",
+				"~/Documents/01 Templates/00 Code/00 Library/DS Core.sublime-project"
+			],
+			[
+				"jp",
+				"~/Documents/GitHub/JP1871/jp.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
