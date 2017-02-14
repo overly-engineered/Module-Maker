@@ -23,7 +23,10 @@ WindowRed = require('./Modules/WindowRed'),
 WindowGreenLower = require('./Modules/WindowGreenLower'),
 WindowRedLower = require('./Modules/WindowRedLower'),
 WindowPromoFeature = require('./Modules/WindowPromoFeature'),
-WindowStrip = require('./Modules/WindowStrip');
+WindowStrip = require('./Modules/WindowStrip'),
+Article = require('./Modules/Article'),
+ArticleTwoColumns = require('./Modules/ArticleTwoColumns'),
+ArticleQuoteImage = require('./Modules/ArticleQuoteImage');
 
 var Frame = React.createClass({
 
@@ -93,7 +96,10 @@ var FrameContainer = React.createClass({
       <WindowGreenLower currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <WindowRedLower currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <WindowPromoFeature currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
-      <WindowStrip currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
+      <WindowStrip currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <Article currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <ArticleTwoColumns currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <ArticleQuoteImage currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
     innerHTML = moduleArray[this.props.currentModule.key];
     var css = '';
     var siteClass = 'cellar editorial home';

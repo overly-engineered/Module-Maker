@@ -17,6 +17,7 @@
       subcopymore[0].style.display = 'block';
       var signpostreadmore = $(base).find('.signpost__readmore');
       signpostreadmore[0].className += ' signpost__readmore--display';
+      this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight);
     },
     handleSlideUp(event) {
       var base = $(event.target).parent().parent().parent().parent();
@@ -26,6 +27,7 @@
       subcopymore[0].style.display = 'none';
       var signpostreadmore = $(base).find('.signpost__readmore');
       signpostreadmore[0].className = ' signpost__readmore';
+      this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight);
     },
     createBody: function(){
       return {__html: this.props.currentContent.bodyCopy};

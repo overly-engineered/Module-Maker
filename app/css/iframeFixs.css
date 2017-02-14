@@ -7,6 +7,11 @@ html {
 .panel__image, .panel__image--border {
   height:auto !important;
 }
+.rowGrid.article {
+  height: auto !important;
+  overflow: hidden !important;
+  padding:0 !important;
+}
 @font-face {
   font-family:WaitroseRegular; 
   src: url("../fonts/Waitrose-Regular.eot"); 

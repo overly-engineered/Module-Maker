@@ -1,12 +1,18 @@
-window green center
+Article Y
 
-window green bottom
+Article two column Y
 
-window strip third
+Article quote Image ask dara
 
-window strip third bottom
+article feature / feature right ask dara
 
-Article
+Article Bottle ask dara
+
+Article quote in copy Y
+
+Article two col list ask dara
+
+Interrupter???
 
 tabs??????????????????
 
