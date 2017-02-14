@@ -4,6 +4,9 @@ html {
 .editorial.home.florist section.notificationBar#deliveryFreeBar, .editorial.home.gifts section.notificationBar#deliveryFreeBar {
   top:0!important;
 }
+.panel__image, .panel__image--border {
+  height:auto !important;
+}
 @font-face {
   font-family:WaitroseRegular; 
   src: url("../fonts/Waitrose-Regular.eot"); 
