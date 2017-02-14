@@ -13,9 +13,11 @@
     createBody: function(){
       return {__html: this.props.currentContent.bodyCopy};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'c-aw-food-wine-cb';
-      this.props.currentContent.subHeading = 'Shop wine types';
+      this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.props.editMade(this.props.currentContent);
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)

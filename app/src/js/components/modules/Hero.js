@@ -14,10 +14,12 @@
     createBody: function(){
       return {__html: this.props.currentContent.bodyCopy};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'c-aw-explore-1000-wines-hero';
       this.props.currentContent.bodyCopy = 'The French wines in our Cellar <br>come from a mixture of classic <br>and lesser known Chateaux.';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);

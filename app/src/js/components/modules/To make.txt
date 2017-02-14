@@ -2,13 +2,11 @@ window green center
 
 window green bottom
 
-window third
-
-window quarter
-
-window strip two thirds
-
 window strip third
+
+window strip third bottom
+
+Article
 
 tabs??????????????????
 
@@ -19,4 +17,6 @@ tabs??????????????????
 //TODO
 
 
-MAKE PANELS WORK WITHOUT HEIGHT OR ANY OF THAT BULLSHIT
+MAKE PANELS WORK WITHOUT HEIGHT OR ANY OF THAT BULLSHIT -- Done
+SAVING MODULES TO FIREBASE FOR EASY COLLECTION
+USE REFS EVERYWHERE RATHER THAN IDS

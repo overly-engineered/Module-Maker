@@ -16,15 +16,14 @@ CategoryBannerOneColumn = require('./Modules/CategoryBannerOneColumn'),
 CategoryBannerTwoColumn = require('./Modules/CategoryBannerTwoColumn'),
 CategoryBannerVideo = require('./Modules/CategoryBannerVideo'),
 SitewideStripOffers = require('./Modules/SitewideStripOffers'),
-SiteWideStrip = require('./Modules/SiteWideStrip');
-
-// var frame =  document.getElementById('demoFrame');
-// var innerFrame = frame.contentDocument || frame.contentWindow.document;
-// frame.style.height = innerFrame.getElementById('wtContent').clientHeight + 'px';
-
-// function frameLoaded(elem){
-//   console.log('fully loaded');
-// }
+SiteWideStrip = require('./Modules/SiteWideStrip'),
+Window = require('./Modules/Window'),
+WindowGreen = require('./Modules/WindowGreen'),
+WindowRed = require('./Modules/WindowRed'),
+WindowGreenLower = require('./Modules/WindowGreenLower'),
+WindowRedLower = require('./Modules/WindowRedLower'),
+WindowPromoFeature = require('./Modules/WindowPromoFeature'),
+WindowStrip = require('./Modules/WindowStrip');
 
 var Frame = React.createClass({
 
@@ -68,8 +67,8 @@ var FrameContainer = React.createClass({
       overflow: 'hidden'
     }
     var contentStyle = {
-      padding:'10px 0px 10px 0px !important;',
-      marginTop: '0px !important;'
+      padding:'10px 0px 10px 0px !important',
+      marginTop: '0px !important'
     };
     var moduleArray = [
       <Card currentContent={this.props.currentContent} handleClick={this.handleClick}  editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>, 
@@ -87,7 +86,14 @@ var FrameContainer = React.createClass({
       <CategoryBannerTwoColumn currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} resetCta={this.props.resetCta} setIframeSize={this.props.setIframeSize}/>,
       <CategoryBannerVideo currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} resetCta={this.props.resetCta} setIframeSize={this.props.setIframeSize}/>,
       <SiteWideStrip currentContent={this.props.currentContent} handleClick={this.handleClick} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize} currentSite={this.props.currentSite}/>,
-      <SitewideStripOffers currentContent={this.props.currentContent} handleClick={this.handleClick} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize} currentSite={this.props.currentSite}/>];
+      <SitewideStripOffers currentContent={this.props.currentContent} handleClick={this.handleClick} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize} currentSite={this.props.currentSite}/>,
+      <Window currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowGreen currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowRed currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowGreenLower currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowRedLower currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowPromoFeature currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <WindowStrip currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
     innerHTML = moduleArray[this.props.currentModule.key];
     var css = '';
     var siteClass = 'cellar editorial home';

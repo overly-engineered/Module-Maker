@@ -15,10 +15,12 @@
     createBody: function(){
       return {__html: this.props.currentContent.bodyCopy};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'g-im-seasonal';
       this.props.currentContent.currentColumnSize = 'col-xs-6';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);

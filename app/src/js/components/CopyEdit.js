@@ -31,7 +31,7 @@ var CopyEdit = React.createClass({
           <label htmlFor="bodyCopy">Body copy</label>
           <input onChange={this.handleEdit} type="text" className="form-control" id="bodyCopy" aria-describedby="bodyHelp" value={this.props.currentContent.bodyCopy}/>
           <small id="bodyHelp" className="form-text text-muted">Enter the body copy for the asset (accepts HTML)</small>
-          <label htmlFor="bodyCopyTwo">Body copy Hidden</label>
+          <label htmlFor="bodyCopyTwo">Body copy Hidden or Sub Body Copy</label>
           <input onChange={this.handleEdit} type="text" className="form-control" id="bodyCopyTwo" aria-describedby="bodyCopyTwoHelp" value={this.props.currentContent.bodyCopyTwo}/>
           <small id="bodyCopyTwoHelp" className="form-text text-muted">Enter the second body copy for the asset (accepts HTML) this is normally used for content which extends or slides down</small>
           <br />

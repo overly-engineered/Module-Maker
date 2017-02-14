@@ -15,9 +15,13 @@
     createBody: function(){
       return {__html: this.props.currentContent.bodyCopy};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'f-au-nav-purple';
+      this.props.currentContent.currentColumnSize = 'col-xs-6';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
+      
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);
@@ -26,12 +30,9 @@
       this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
     },
     render: function() {
-      var contentStyle = {
-        height: '305px'
-      }
 
       return (
-        <div className="rowGrid" style={contentStyle}>
+        <div className="rowGrid">
           <div className={this.props.currentContent.currentColumnSize}>
             <div ref="row" className="panel--central">
 

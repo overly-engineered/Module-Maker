@@ -13,9 +13,11 @@
     createSideCopy: function(){
       return {__html: this.props.currentContent.subHeading};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'c-hp-p1-story1-chateaupoujeaux';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);

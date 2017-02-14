@@ -11,9 +11,11 @@
     createHeading: function() {
       return {__html: this.props.currentContent.heading};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'c-in-lf-fw-poultry';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);
@@ -22,13 +24,9 @@
       this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
     },
     render: function() {
-      var contentStyle = {
-        height: '305px'
-      }
-      
 
       return (
-        <div className="rowGrid" style={contentStyle}>
+        <div className="rowGrid">
           <div className={this.props.currentContent.currentColumnSize}>
 
           	<div ref="row" className="panel--tab">

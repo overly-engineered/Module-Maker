@@ -36,10 +36,12 @@
     createVideo: function(){
       return {__html: this.props.currentContent.videoCode}
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       this.props.currentContent.image = 'c-aw-food-wine-cb';
       this.props.currentContent.subHeading = 'Shop wine types';
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       ;(function($){
   
         'use strict';

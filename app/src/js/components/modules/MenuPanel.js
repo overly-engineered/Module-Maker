@@ -16,18 +16,26 @@
     createCta: function(){
       return {__html: this.props.currentContent.ctaDetails[0].ctaText};
     },
-    componentDidMount: function(){
+    componentWillMount: function(){
       if(this.props.currentSite == 0){
         this.props.currentContent.image = 'c-mm-p1-aw-winterwarmers';
       } else {
         this.props.currentContent.image = 'g-mm-allgifts-valentines';
       }
       this.props.editMade(this.props.currentContent);
+    },
+    componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);
     },
     componentDidUpdate: function(){
+      if(this.props.currentSite == 0){
+        this.props.currentContent.image = 'c-mm-p1-aw-winterwarmers';
+      } else {
+        this.props.currentContent.image = 'g-mm-allgifts-valentines';
+      }
+      this.props.editMade(this.props.currentContent);
       this.refs.image.getDOMNode().onload = function() {
         this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
       }.bind(this);
