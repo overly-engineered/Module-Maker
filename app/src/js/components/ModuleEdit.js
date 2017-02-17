@@ -58,6 +58,42 @@ var ModuleEdit = React.createClass({
           </div>
         </div>;
     }
+    var videoHtml = '';
+    if(this.props.currentModule.video){
+      videoHtml =         <div className="card">
+          <div className="card-header" role="tab" id="headingFive">
+            <h5 className="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Video
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div className="card-block">
+              <VideoEdit currentContent={this.props.currentContent} editMade={this.props.editMade}></VideoEdit>
+            </div>
+          </div>
+        </div>;
+    }
+    var roundelHtml = '';
+    if(this.props.currentModule.roundel){
+      roundelHtml =         <div className="card">
+          <div className="card-header" role="tab" id="headingFour">
+            <h5 className="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Roundel
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div className="card-block">
+              <RoundelEdit currentContent={this.props.currentContent} editMade={this.props.editMade}></RoundelEdit>
+            </div>
+          </div>
+        </div>;
+    }
     return (
       <form id="accordion" role="tablist" aria-multiselectable="true">
         
@@ -108,37 +144,9 @@ var ModuleEdit = React.createClass({
           </div>
         </div>
 
-        <div className="card">
-          <div className="card-header" role="tab" id="headingFour">
-            <h5 className="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                Roundel
-              </a>
-            </h5>
-          </div>
+        {roundelHtml}
 
-          <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div className="card-block">
-              <RoundelEdit currentContent={this.props.currentContent} editMade={this.props.editMade}></RoundelEdit>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-header" role="tab" id="headingFive">
-            <h5 className="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                Video
-              </a>
-            </h5>
-          </div>
-
-          <div id="collapseFive" className="collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div className="card-block">
-              <VideoEdit currentContent={this.props.currentContent} editMade={this.props.editMade}></VideoEdit>
-            </div>
-          </div>
-        </div>
+        {videoHtml}
 
         <button type="button" className="btn btn-primary btn-lg btn-block" onClick={this.props.getCode}>Create Module</button>
       </form>
