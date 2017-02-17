@@ -26,7 +26,8 @@ WindowPromoFeature = require('./Modules/WindowPromoFeature'),
 WindowStrip = require('./Modules/WindowStrip'),
 Article = require('./Modules/Article'),
 ArticleTwoColumns = require('./Modules/ArticleTwoColumns'),
-ArticleQuoteImage = require('./Modules/ArticleQuoteImage');
+ArticleQuoteImage = require('./Modules/ArticleQuoteImage'),
+Interrupter = require('./Modules/Interrupter');
 
 var Frame = React.createClass({
 
@@ -99,8 +100,9 @@ var FrameContainer = React.createClass({
       <WindowStrip currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <Article currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <ArticleTwoColumns currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
-      <ArticleQuoteImage currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
-    innerHTML = moduleArray[this.props.currentModule.key];
+      <ArticleQuoteImage currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <Interrupter currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
+    innerHTML = moduleArray[this.props.currentModule.id];
     var css = '';
     var siteClass = 'cellar editorial home';
     switch (this.props.currentSite) {

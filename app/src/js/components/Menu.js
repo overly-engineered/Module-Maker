@@ -16,12 +16,8 @@ var Menu = React.createClass({
       if(!item.category){
         return <ModuleDropDown key={item.id}
                           name={item.name}
-                          width={item.width}
                           viewModule={this.props.viewModule}
-                          description={item.description}
-                          multiCta = {item.multiCta}
-                          depth = {item.depth}
-                          sizeable = {item.sizeable} />
+                          description={item.description} />
       }
     }.bind(this))
     var siteItems = this.props.sites.map(function(item) {

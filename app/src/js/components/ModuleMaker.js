@@ -46,36 +46,37 @@ function format(node, level) {
 }
 
 var ModuleMaker = React.createClass({
-  getInitialState: function(){
+  createInitialState: function(){
     var dateObj = new Date();
     var year = dateObj.getUTCMonth() + 1;
     return {
-      modules: [{id:0,name:'Card', width:1, description:'Waitrose Style Card', multiCta: false, sizeable:true}, 
-                {id:1, name:'Product of the week', width:1, description:'Product of the week pod cellar homepage', multiCta: false}, 
-                {id:2,name:'Feature', width:1, description:'Full width feature', multiCta: false}, 
-                {id:3, name:'Panel', width:1, description:'Navigation Panel', multiCta: false, group:1, sizeable:true}, 
-                {id:4, name: 'Panel reveal', width:1, description:'Panel with reveal on hover', multiCta: false, group:1, sizeable:true},
-                {id:5, name:'Panel border', width:1, description:'Panel with a green border when hovered on', multiCta:false, group:1, sizeable:true},
-                {id:6, name:'Panel Central', width:1, description:'Panel with white central section', multiCta:false, group:1, sizeable:true},
-                {id:7, name:'Whats Trending pod', width:1, description:'Whats trending pod for site homepages', multiCta: false}, 
-                {id:8, name:'Menu Panel', width:1, description:'Menu image panels', multiCta: false}, 
-                {id:9, name:'Hero', width:2, description:'Site Hero', multiCta: false},
-                {id:10, name:'Cat Banner', width:1, description: 'PLP Category banner with no body copy', multiCta: true, group:2}, 
-                {id:11, name:'Cat Banner One Column', width:1, description:'PLP Category banner with one column of body copy', multiCta: false, group:2},
-                {id:12, name:'Cat Banner Two Column', width:1, description:'PLP Category banner with one Column of copy and one of links', multiCta:true, group:2},
-                {id:13, name:'Cat Banner Video', width:1, description:'PLP Category banner with one column of copy and a video', multiCta:true, group:2},
-                {id:14, name:'Sitewide Strip', width:2, description:'Sitewide Strip', multiCta:false, group:3, depth:2},
-                {id:15, name:'Offers Sitewide Strip', width:2, description:'Offers Red Sitewide Strip with a link', multiCta:false, group:3, depth:2},
-                {id:16, name:'Window', width:1, description:'Window image with text underneath', multicCta:false, group:4, sizeable:true},
-                {id:17, name:'Window Green Strip', width:1, description:'Window with a green strip through the center', multiCta:false, group:4, sizeable:true},
-                {id:18, name:'Window Red Strip', width:1, description:'Window with a red strip through the center', multiCta:false, group:4, sizeable:true},
-                {id:19, name:'Window Green Strip Lower', width:1, description:'Window with a green strip through the bottom', multiCta:false, group:4, sizeable:true},
-                {id:20, name:'Window Red Strip Lower', width:1, description:'Window with a red strip through the bottom', multiCta:false, group:4, sizeable:true},
-                {id:21, name:'Window Green two lines', width:1, description:'Window with a green strip with two lines', multiCta:false, group:4, sizeable:true},
-                {id:22, name:'Window Strip', width:1, description:'Window with white strip', multiCta:false, group:4, sizeable:true},
-                {id:23, name:'Article', width:1, description:'Article with image and single column of text', multiCta:false, group:5, sizeable:false},
-                {id:24, name:'Article Two Column', width:1, description:'Article with image and two columns of text', multiCta:false, group:5, sizeable:false},
-                {id:25, name:'Article Two Column Quote', width:1, description:'Article with image and two columns of text with a quote', multiCta:false, group:5, sizeable:false},
+      modules: [{id:0,name:'Card', width:1, description:'Waitrose Style Card', multiCta: false, sizeable:true, video:false, roundel:true}, 
+                {id:1, name:'Product of the week', width:1, description:'Product of the week pod cellar homepage', multiCta: false, video:false, roundel:true}, 
+                {id:2,name:'Feature', width:1, description:'Full width feature', multiCta: false, video:false, roundel:true}, 
+                {id:3, name:'Panel', width:1, description:'Navigation Panel', multiCta: false, group:1, sizeable:true, video:false, roundel:false}, 
+                {id:4, name: 'Panel reveal', width:1, description:'Panel with reveal on hover', multiCta: false, group:1, sizeable:true, video:false, roundel:false},
+                {id:5, name:'Panel border', width:1, description:'Panel with a green border when hovered on', multiCta:false, group:1, sizeable:true, video:false, roundel:false},
+                {id:6, name:'Panel Central', width:1, description:'Panel with white central section', multiCta:false, group:1, sizeable:true, video:false, roundel:false},
+                {id:7, name:'Whats Trending pod', width:1, description:'Whats trending pod for site homepages', multiCta: false, video:false, roundel:true}, 
+                {id:8, name:'Menu Panel', width:1, description:'Menu image panels', multiCta: false, video:false, roundel:true}, 
+                {id:9, name:'Hero', width:2, description:'Site Hero', multiCta: false, video:false, roundel:true},
+                {id:10, name:'Cat Banner', width:1, description: 'PLP Category banner with no body copy', multiCta: true, group:2, video:false, roundel:true}, 
+                {id:11, name:'Cat Banner One Column', width:1, description:'PLP Category banner with one column of body copy', multiCta: false, group:2, video:false, roundel:true},
+                {id:12, name:'Cat Banner Two Column', width:1, description:'PLP Category banner with one Column of copy and one of links', multiCta:true, group:2, video:false, roundel:true},
+                {id:13, name:'Cat Banner Video', width:1, description:'PLP Category banner with one column of copy and a video', multiCta:true, group:2, video:true, roundel:true},
+                {id:14, name:'Sitewide Strip', width:2, description:'Sitewide Strip', multiCta:false, group:3, depth:2, video:false, roundel:false},
+                {id:15, name:'Offers Sitewide Strip', width:2, description:'Offers Red Sitewide Strip with a link', multiCta:false, group:3, depth:2, video:false, roundel:false},
+                {id:16, name:'Window', width:1, description:'Window image with text underneath', multicCta:false, group:4, sizeable:true, video:false, roundel:true},
+                {id:17, name:'Window Green Strip', width:1, description:'Window with a green strip through the center', multiCta:false, group:4, sizeable:true, video:false, roundel:false},
+                {id:18, name:'Window Red Strip', width:1, description:'Window with a red strip through the center', multiCta:false, group:4, sizeable:true, video:false, roundel:false},
+                {id:19, name:'Window Green Strip Lower', width:1, description:'Window with a green strip through the bottom', multiCta:false, group:4, sizeable:true, video:false, roundel:false},
+                {id:20, name:'Window Red Strip Lower', width:1, description:'Window with a red strip through the bottom', multiCta:false, group:4, sizeable:true, video:false, roundel:false},
+                {id:21, name:'Window Green two lines', width:1, description:'Window with a green strip with two lines', multiCta:false, group:4, sizeable:true, video:false, roundel:false},
+                {id:22, name:'Window Strip', width:1, description:'Window with white strip', multiCta:false, group:4, sizeable:true, video:false, roundel:true},
+                {id:23, name:'Article', width:1, description:'Article with image and single column of text', multiCta:false, group:5, sizeable:false, video:false, roundel:false},
+                {id:24, name:'Article Two Column', width:1, description:'Article with image and two columns of text', multiCta:false, group:5, sizeable:false, video:false, roundel:false},
+                {id:25, name:'Article Two Column Quote', width:1, description:'Article with image and two columns of text with a quote', multiCta:false, group:5, sizeable:false, video:false, roundel:false},
+                {id:26, name:'Interrupter', width:2, description:'Site interrupter which spans full width of the browser window', multiCta:false, sizeable:false, video:false, roundel:false},
                 {id:99, name:'Cat banners', description:'PLP Category Banners', category: true, groupIndex: 2},
                 {id:100, name:'Panels', description:'Image Panels', category: true, groupIndex: 1},
                 {id:101, name:'Sitewide Strips', description:'Sitewide strips for various sites', category:true, groupIndex: 3},
@@ -112,7 +113,10 @@ var ModuleMaker = React.createClass({
                       videoThumbnail:'http://www.waitrose.com/content/dam/waitrose/cellar/content/long-term/video-thumbnail/Phillip-Schofield--Waitrose-Cellar.png',
                       videoCode:'<iframe src="//players.brightcove.net/3127020382001/default_default/index.html?videoId=3192417654001" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>',
                       currentColumnSize: 'col-xs-12' }
-    }
+    };
+  },
+  getInitialState: function(){
+    return this.createInitialState();
   },
   signIn: function(){
     var email = document.getElementById('LogInEmail').value;
@@ -140,21 +144,20 @@ var ModuleMaker = React.createClass({
     });
   },
   viewModule: function(module){
+    var result = $.grep(this.state.modules, function(e){return e.id === module.key});
     this.setState({
       view:'board',
-      currentModule:module
+      currentModule:result[0]
     });
   },
   viewMenu: function(){
-    this.setState({
-      view: 'menu',
-      currentModule: null
-    });
+    this.setState(this.createInitialState());
   },
   viewSubMenu: function(module){
+    var result = $.grep(this.state.modules, function(e){return e.id === module.key});
     this.setState({
       view: 'subMenu',
-      currentModule:module
+      currentModule:result[0]
     });
   },
   siteChange: function(newSite){
@@ -214,7 +217,6 @@ var ModuleMaker = React.createClass({
   },
   getCode: function(){
     var target = $('#demoFrame').contents().find('#wtContent').children().clone();
-    console.log(this.state.currentModule);
     if(this.state.currentModule.depth == 2){
       var target = $('#demoFrame').contents().find('#wtContent').children().children().clone();
     }
@@ -283,6 +285,9 @@ var ModuleMaker = React.createClass({
     }
     
     var processedHTML = process($(target)[0].innerHTML);
+    if(this.state.currentModule.key == 26){
+      processedHTML = '</div>' + processedHTML + '<div class="rowGrid">';
+    }
     $('#codeModalBody').text(processedHTML)
     $('#codemodal').modal();
     $('#codemodal').on('hidden.bs.modal', function (e) {

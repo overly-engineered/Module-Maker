@@ -13,12 +13,8 @@ var ModuleList = React.createClass({
         if(item.group == this.props.currentModule.groupIndex){
           return <ModuleItem key={item.id}
                           name={item.name}
-                          width={item.width}
                           viewModule={this.props.viewModule}
-                          description={item.description}
-                          multiCta = {item.multiCta}
-                          depth = {item.depth}
-                          sizeable = {item.sizeable} />
+                          description={item.description}/>
         } else {
           return '';
         }
