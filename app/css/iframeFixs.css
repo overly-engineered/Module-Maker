@@ -12,6 +12,10 @@ html {
   overflow: hidden !important;
   padding:0 !important;
 }
+a.cta, p.cta {
+  font-weight: bold;
+  text-decoration: underline;
+}
 @font-face {
   font-family:WaitroseRegular; 
   src: url("../fonts/Waitrose-Regular.eot"); 

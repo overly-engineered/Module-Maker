@@ -32,6 +32,15 @@
       }
       var contentClass = 'hero__content'
       
+      var ctaClass = 'btn--primary';
+      if(this.props.currentContent.ctaType == 1){
+        ctaClass = 'btn';
+      } else if(this.props.currentContent.ctaType == 2){
+        ctaClass = 'btn--offers';
+      } else if(this.props.currentContent.ctaType == 3){
+        ctaClass = 'hero__cta';
+      }
+
       if(this.props.currentContent.roundel){
         switch (this.props.currentContent.roundelType) {
           case 2:
@@ -77,7 +86,7 @@
 
                       <p dangerouslySetInnerHTML={this.createBody()} />
 
-                      <p className="hero__cta">{this.props.currentContent.ctaDetails[0].ctaText}</p>
+                      <p className={ctaClass}>{this.props.currentContent.ctaDetails[0].ctaText}</p>
                     </div>
                 </div>
 

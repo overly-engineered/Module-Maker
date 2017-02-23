@@ -27,7 +27,8 @@ WindowStrip = require('./Modules/WindowStrip'),
 Article = require('./Modules/Article'),
 ArticleTwoColumns = require('./Modules/ArticleTwoColumns'),
 ArticleQuoteImage = require('./Modules/ArticleQuoteImage'),
-Interrupter = require('./Modules/Interrupter');
+FullWidthBanner = require('./Modules/FullWidthBanner'),
+ButtonRow = require('./Modules/ButtonRow');
 
 var Frame = React.createClass({
 
@@ -101,24 +102,26 @@ var FrameContainer = React.createClass({
       <Article currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <ArticleTwoColumns currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
       <ArticleQuoteImage currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
-      <Interrupter currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
+      <FullWidthBanner currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>,
+      <ButtonRow currentContent={this.props.currentContent} handleClick={this.handleClick} currentSite={this.props.currentSite} editMade={this.props.editMade} setIframeSize={this.props.setIframeSize}/>];
+      
     innerHTML = moduleArray[this.props.currentModule.id];
     var css = '';
     var siteClass = 'cellar editorial home';
     switch (this.props.currentSite) {
       case 0:
-        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='http://www.waitrosecellar.com/wcsstore7.03.06.8/WaitroseCellar/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseCellar/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
+        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore7.03.06.8/WaitroseCellar/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseCellar/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
         break;
       case 1:
-        css = <i><link type='text/css' rel='stylesheet' href='http://www.waitroseflorist.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='http://www.waitroseflorist.com/wcsstore7.03.06.8/WaitroseFlorist/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitroseflorist.com/wcsstore/WaitroseFlorist/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
+        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitroseflorist.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitroseflorist.com/wcsstore7.03.06.8/WaitroseFlorist/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitroseflorist.com/wcsstore/WaitroseFlorist/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
           siteClass = 'editorial home florist';
         break;
       case 2:
-        css = <i><link type='text/css' rel='stylesheet' href='http://www.waitrosegifts.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='http://www.waitrosegifts.com/wcsstore7.03.06.8/WaitroseGifts/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosegifts.com/wcsstore/WaitroseGifts/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
+        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitrosegifts.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosegifts.com/wcsstore7.03.06.8/WaitroseGifts/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosegifts.com/wcsstore/WaitroseGifts/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
           siteClass = 'editorial home gifts';
         break;
       default:
-        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='http://www.waitrosecellar.com/wcsstore7.03.06.8/WaitroseCellar/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseCellar/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
+        css = <i><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseDirectStorefrontAssetStore/Custom/skins/css/screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore7.03.06.8/WaitroseCellar/css/store_screen.css' /><link type='text/css' rel='stylesheet' href='https://www.waitrosecellar.com/wcsstore/WaitroseCellar/Attachment/CustomFiles/layout_custom.css' /><link type="text/css" rel="stylesheet" href="css/iframeFixs.css" /></i>
     }
 
     return (

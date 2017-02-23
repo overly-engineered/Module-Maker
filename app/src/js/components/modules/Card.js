@@ -30,7 +30,14 @@
     },
     render: function() {
       
-      
+      var ctaClass = 'btn--primary';
+      if(this.props.currentContent.ctaType == 1){
+        ctaClass = 'btn';
+      } else if(this.props.currentContent.ctaType == 2){
+        ctaClass = 'btn--offers';
+      } else if(this.props.currentContent.ctaType == 3){
+        ctaClass = 'cta';
+      }
 
       var moduleClass = 'card';
       if(this.props.currentContent.roundel){
@@ -87,7 +94,7 @@
 
                 <p dangerouslySetInnerHTML={this.createBody()} />
 
-                <a href={this.props.currentContent.ctaDetails[0].ctaLink} onClick={this.props.handleClick} title={this.props.currentContent.ctaDetails[0].ctaDescription} onclick="ga('send', 'event', 'Page', 'click', 'Row # | Card - Title');" className="btn--primary">{this.props.currentContent.ctaDetails[0].ctaText}</a>
+                <a href={this.props.currentContent.ctaDetails[0].ctaLink} onClick={this.props.handleClick} title={this.props.currentContent.ctaDetails[0].ctaDescription} onclick="ga('send', 'event', 'Page', 'click', 'Row # | Card - Title');" className={ctaClass}>{this.props.currentContent.ctaDetails[0].ctaText}</a>
 
               </div>
 

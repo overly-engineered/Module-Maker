@@ -25,7 +25,6 @@
     render: function() {
 
       var style={textAlign:'right', display:'block', lineHeight:'22px'};
-      var styleTwo={fontWeight: 'bold !important', textDecoration: 'underline', display: 'block'};
       var styleThree={overflow:'auto'};
       var moduleClass = 'card';
       if(this.props.currentContent.roundel){
@@ -61,7 +60,14 @@
           break;
         }
       }
-
+      var ctaClass = 'btn--primary mt1';
+      if(this.props.currentContent.ctaType == 1){
+        ctaClass = 'btn mt1';
+      } else if(this.props.currentContent.ctaType == 2){
+        ctaClass = 'btn--offers mt1';
+      } else if(this.props.currentContent.ctaType == 3){
+        ctaClass = 'cta mt1';
+      }
 
       return (
         <div className="rowGrid">
@@ -87,7 +93,7 @@
 
                                 <p dangerouslySetInnerHTML={this.createBody()} />
 
-                                <p style={styleTwo} className="mt1">{this.props.currentContent.ctaDetails[0].ctaText}</p>
+                                <p className={ctaClass}>{this.props.currentContent.ctaDetails[0].ctaText}</p>
 
                             </div>
 

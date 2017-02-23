@@ -16,6 +16,10 @@ var CtaEdit = React.createClass({
     }
     this.props.editMade(this.props.currentContent);
   },
+  buttonChange: function(event){
+    this.props.currentContent.ctaType = event.target.value;
+    this.props.editMade(this.props.currentContent);
+  },
   render: function() {
     var ctaHTML = this.props.currentContent.ctaDetails.map(function(item) {
       return <CtaDetails key={item.id}
@@ -27,6 +31,7 @@ var CtaEdit = React.createClass({
     var navRight = '';
     var isCarousel = '';
     var removeButton = '';
+    var ctaTypes = '';
     if(this.props.currentContent.ctaDetails.length > 1){
       navLeft = <a className="carousel-control-prev" href="#ctaCarousel" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,6 +49,30 @@ var CtaEdit = React.createClass({
     if(this.props.currentModule.multiCta){
       addButton = <NewCtaButton addCta={this.props.addCta}/>
     }
+    if(this.props.currentModule.ctaDiff){
+      ctaTypes = <div className="card-block">
+          <label className="custom-control custom-radio">
+            <input id="radio1" name="radio" type="radio" className="custom-control-input" defaultChecked="checked" value="0" onClick={this.buttonChange}/>
+            <span className="custom-control-indicator" ></span>
+            <span className="custom-control-description">Green Button</span>
+          </label>
+          <label className="custom-control custom-radio">
+            <input id="radio2" name="radio" type="radio" className="custom-control-input" value="2" onClick={this.buttonChange}/>
+            <span className="custom-control-indicator" ></span>
+            <span className="custom-control-description">Offers Button</span>
+          </label>
+          <label className="custom-control custom-radio">
+            <input id="radio3" name="radio" type="radio" className="custom-control-input" value="1" onClick={this.buttonChange}/>
+            <span className="custom-control-indicator" ></span>
+            <span className="custom-control-description">White Button</span>
+          </label>
+          <label className="custom-control custom-radio">
+            <input id="radio4" name="radio" type="radio" className="custom-control-input" value="3" onClick={this.buttonChange}/>
+            <span className="custom-control-indicator" ></span>
+            <span className="custom-control-description">Text</span>
+          </label>
+        </div>;
+    }
     return (
       
       <div>
@@ -56,6 +85,8 @@ var CtaEdit = React.createClass({
                 <label htmlFor="assetPosition">Asset Position</label>
         <input onChange={this.handleEdit} type="text" className="form-control" id="assetPosition" aria-describedby="assetPositionHelp" value={this.props.currentContent.assetPosition}/>
         <small id="assetPositionHelp" className="form-text text-muted">Enter where on the page the asset is going to be positioned</small>
+        {ctaTypes}
+        
         <div id="ctaCarousel" className="carousel slide" data-interval="false">
           <div className={isCarousel} role="listbox">
             {ctaHTML}

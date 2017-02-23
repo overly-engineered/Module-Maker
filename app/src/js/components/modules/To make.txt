@@ -1,22 +1,12 @@
-Article Y
+Interrupter rename to full width banner Y
 
-Article two column Y
+Different button types Y
 
-Article quote Image ask dara
-
-article feature / feature right ask dara
-
-Article Bottle ask dara
-
-Article quote in copy Y
-
-Article two col list ask dara
-
-Interrupter???
+button rows
 
 tabs??????????????????
 
-
+sitewide countdown
 
 
 
@@ -25,4 +15,6 @@ tabs??????????????????
 
 MAKE PANELS WORK WITHOUT HEIGHT OR ANY OF THAT BULLSHIT -- Done
 SAVING MODULES TO FIREBASE FOR EASY COLLECTION
-USE REFS EVERYWHERE RATHER THAN IDS
+USE REFS EVERYWHERE RATHER THAN IDS following places: 
+	1. Cta carousel
+	2. Edit made function in all edit files.

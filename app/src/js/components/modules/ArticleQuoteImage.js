@@ -33,7 +33,7 @@
       this.props.setIframeSize(this.refs.row.getDOMNode().clientHeight)
     },
     render: function() {
-
+      
       return (
         <div className="rowGrid article">
 
