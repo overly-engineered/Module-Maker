@@ -15,8 +15,12 @@
       return {__html: this.props.currentContent.bodyCopy};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'g-im-seasonal';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'g-im-seasonal';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
@@ -63,16 +67,16 @@
       }
 
       return (
-        <div className="rowGrid" style={styles}>
+        <div ref="row" className="rowGrid" style={styles}>
           <div className="mod-col">
 
-            <div ref="row" id="roundel" className={moduleClass} data-roundel={this.props.currentContent.dataRoundel} data-roundelamount={this.props.currentContent.dataRoundelAmount} data-roundeltop={this.props.currentContent.dataRoundelTop} data-roundelmiddle={this.props.currentContent.dataRoundelMiddle} data-roundelbottom={this.props.currentContent.dataRoundelBottom}>
+            <div id="roundel" className={moduleClass} data-roundel={this.props.currentContent.dataRoundel} data-roundelamount={this.props.currentContent.dataRoundelAmount} data-roundeltop={this.props.currentContent.dataRoundelTop} data-roundelmiddle={this.props.currentContent.dataRoundelMiddle} data-roundelbottom={this.props.currentContent.dataRoundelBottom}>
 
               <a href={this.props.currentContent.ctaDetails[0].ctaLink} onClick={this.props.handleClick} title={this.props.currentContent.ctaDetails[0].ctaDescription}>
 
                 <div className="jl-section__panel__image">
 
-                  <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+                  <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
 
                 </div>
 

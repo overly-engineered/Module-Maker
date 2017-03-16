@@ -1,0 +1,174 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Welcome to ModuleMaker
+
+2
+00:00:10.025 --> 00:00:18.500
+You will be sent a username and password to access ModuleMaker
+
+3
+00:00:19.00 --> 00:00:24.000
+If you forget your password you can reset it here
+
+4
+00:00:26.500 --> 00:00:29.000
+Click submit and get started
+
+5
+00:00:31.000 --> 00:00:34.000
+At the top is the menu, where you can:
+
+6
+00:00:34.000 --> 00:00:35.000
+Go to the homepage
+
+7
+00:00:35.000 --> 00:00:40.000
+Select Modules
+
+8
+00:00:41.000 --> 00:00:43.000
+Choose Site
+
+9
+00:00:45.000 --> 00:00:45.500
+View saved modules
+
+1
+00:00:46.000 --> 00:00:46.500
+Log out
+
+1
+00:00:48.000 --> 00:00:52.000
+See which site you are currently working on
+
+1
+00:00:53.000 --> 00:00:58.000
+Some sites have more modules than others
+
+1
+00:00:58.000 --> 00:01:08.000
+Select the site to see available modules
+
+1
+00:01:09.000 --> 00:01:18.000
+Lets create a new module for Waitrose Cellar
+
+1
+00:01:19.000 --> 00:01:24.000
+Here is our new card element
+
+1
+00:01:25.000 --> 00:01:29.000
+Here are the available options for the new card
+
+1
+00:01:31.000 --> 00:01:43.000
+Here we can change the asset size for the card
+
+1
+00:01:44.000 --> 00:01:47.000
+In this case we will choose half width
+
+1
+00:01:49.000 --> 00:02:00.000
+Now we can customise our copy
+
+2
+00:02:04.000 --> 00:02:09.000
+Not all options are included on the card
+
+2
+00:02:22.000 --> 00:02:45.000
+You can put html into some of these options, to bold or break text
+
+2
+00:02:45.000 --> 00:02:52.000
+Remember to close your tags.
+
+2
+00:02:57.000 --> 00:03:00.000
+Now we will create our new link
+
+2
+00:03:01.000 --> 00:03:20.000
+We need to add all relevent information as the GA tracking is built from this information
+
+2
+00:03:21.000 --> 00:03:34.000
+We can also change the type of CTA for the new card
+
+2
+00:03:35.000 --> 00:04:05.000
+Now we can change the CTA text, Link, Link description, and asset destination (used for GA)
+
+2
+00:04:11.000 --> 00:04:15.000
+We will now add in the new image provided by the design team
+
+2
+00:04:16.000 --> 00:04:20.000
+Ooops
+
+2
+00:04:21.000 --> 00:04:24.000
+There we go
+
+2
+00:04:25.000 --> 00:04:30.000
+Now we add our image description
+
+3
+00:04:36.000 --> 00:04:45.000
+Here we can pick from the available roundels for the new card
+
+3
+00:04:46.000 --> 00:04:48.000
+There is a dropdown here but it wont show on the screen recorder
+
+3
+00:04:49.000 --> 00:04:53.000
+They are the same options as you would normally see, eg: Save upto, Save, Green, Red, Percent off etc.
+
+3
+00:04:54.000 --> 00:05:00.000
+Once we have selected one we can customises it to our needs.
+
+3
+00:05:02.000 --> 00:05:06.000
+We've finished editing now so we can click the create button and get our new module
+
+3
+00:05:07.000 --> 00:05:09.000
+Tada
+
+3
+00:05:10.000 --> 00:05:18.000
+We can see the output code so we can check for the important bits like GA tags
+
+3
+00:05:30.000 --> 00:05:40.000
+Be sure to check carefully, we dont want any mistakes. :)
+
+3
+00:05:41.000 --> 00:05:45.000
+Once we're ready we can click the copy code button to get the code copied to the clipboard.
+
+3
+00:05:46.000 --> 00:05:49.000
+We can now paste our code straight into management centre.
+
+4
+00:05:50.000 --> 00:06:08.000
+We can save a module by entering a name for it. Please follow the standard in the help section
+
+4
+00:06:12.000 --> 00:06:16.000
+Our new card is now saved and can be recalled later.
+
+4
+00:06:16.000 --> 00:06:24.000
+Thanks for watching, you can find more help in the help centre.
+

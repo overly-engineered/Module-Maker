@@ -16,9 +16,13 @@
       return {__html: this.props.currentContent.bodyCopy};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'g-im-seasonal';
-      this.props.currentContent.currentColumnSize = 'col-xs-6';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'g-im-seasonal';
+        this.props.currentContent.currentColumnSize = 'col-xs-6';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
@@ -83,7 +87,7 @@
               <div className="card__image">
 
                 <a href={this.props.currentContent.ctaDetails[0].ctaLink} onClick={this.props.handleClick} title={this.props.currentContent.ctaDetails[0].ctaDescription} onclick="ga('send', 'event', 'Page', 'click', 'Row # | Card - Title');">
-                  <img src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} ref="image"/>
+                  <img src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} ref="image"/>
                 </a>
 
               </div>

@@ -22,13 +22,14 @@ var ModuleView = React.createClass({
             </div>
           </div>
           <div className="row">
-            <div id="demoColumn" className="col-sm-12 col-md-8">
+            <div ref="demoColumn" className="col-sm-12 col-md-8">
               <ModuleDemo currentContent={this.props.currentContent} 
                           currentModule={this.props.currentModule} 
                           currentSite={this.props.currentSite}
                           editMade={this.props.editMade}
                           resetCta={this.props.resetCta}
-                          setIframeSize={this.props.setIframeSize}/>
+                          setIframeSize={this.props.setIframeSize}
+                          ref="moduleDemo"/>
             </div>
             <div className="col-sm-12 col-md-4">
               <ModuleEdit currentContent={this.props.currentContent} 
@@ -36,7 +37,8 @@ var ModuleView = React.createClass({
                           getCode={this.props.getCode} 
                           addCta={this.props.addCta} 
                           removeCta={this.props.removeCta}
-                          currentModule={this.props.currentModule}/>
+                          currentModule={this.props.currentModule}
+                          currentSite={this.props.currentSite}/>
             </div>
           </div>
         </div>

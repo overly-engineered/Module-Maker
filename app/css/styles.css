@@ -61,9 +61,6 @@ iframe{
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-.carousel-inner {
-
-}
 .carousel-inner .form-group {
     width: 70%;
     margin: 20px 15%;
@@ -86,4 +83,150 @@ iframe{
   margin-right: 20px;
   font-weight: 900;
   font-size: 29px;
+}
+.alert.fade.show {
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+}
+.saveForm {
+  height:51px;
+  border-radius: .25rem 0 0 .25rem;
+}
+.submitSave {
+  border-radius: 0 .25rem .25rem 0;
+}
+.saveItem .saveFrameContainer {
+  height: 225px;
+  width: 100%;
+  overflow: hidden;
+}
+.saveItem {
+  width:100%;
+  position: relative;
+}
+.saveItem iframe {
+  width: 960px;
+  height: 450px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+.helpButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  border: 4px solid grey;
+  padding: 6px;
+  cursor:pointer;
+  transition: box-shadow .5s ease;
+}
+.helpButton:hover {
+  box-shadow: 0px 5px 10px RGBA(0,0,0,0.5);
+}
+.helpButton img {
+  width:100%;
+}
+.scrollspybody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height:400px;
+  position: relative;
+}
+.nav.nav-pills.noborder {
+  border: none;
+}
+.helpModal h4, .helpModal h5, .helpModal h6 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.helpModal .helpContent {
+  height:auto;
+  min-height: 400px;
+  width: 100%;
+  padding-right:30px;
+  padding-left:30px;
+  padding-top:30px;
+}
+.helpContent.Mutli {
+  height: auto;
+}
+.helpModal > .helpContent:nth-of-type(4n - 3) {
+  border-left:5px solid #381213;
+}
+.helpModal > .helpContent:nth-of-type(4n - 2) {
+  border-left:5px solid #00abc7;
+}
+.helpModal > .helpContent:nth-of-type(4n - 1) {
+  border-left:5px solid #e4002f;
+}
+.helpModal > .helpContent:nth-of-type(4n) {
+  border-left:5px solid #01667f;
+}
+.centerText {
+  text-align:center;
+}
+.helpContent.Mutli > .helpContent {
+  height:auto;
+  min-height:400px;
+}
+.helpContent blockquote {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+}
+.helpVideo {
+  width:100%;
+}
+.helpContent.video {
+  width:50%;
+  float:left;
+  padding-top:0;
+}
+.helpContent.auto {
+  height:auto;
+}
+.helpContent .question {
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  font-style: italic;
+}
+.example-appear {
+  opacity: 0.01;
+}
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+.ml0 {
+  margin-left:0!important;
+}
+.mr0 {
+  margin-right:0!important;
+}
+.noBorderBottom {
+border-bottom:0!important;
+}
+.orderByButton {
+  text-align: right;
+  display: inline-block;
+  font-size: 14px;
+}
+.orderByButton:hover {
+  text-decoration: underline;
+  color:#5bc0de;
+}
+.orderByButton:before {
+  content:'OrderBy: ';
+  position: absolute;
+  left: -60px;
+}
+.orderByButton:after {
+  content:'\2193';
+}
+.orderByButton.active:after {
+  content:'\2191';
 }

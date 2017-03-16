@@ -54,17 +54,17 @@ var CtaEdit = React.createClass({
           <label className="custom-control custom-radio">
             <input id="radio1" name="radio" type="radio" className="custom-control-input" defaultChecked="checked" value="0" onClick={this.buttonChange}/>
             <span className="custom-control-indicator" ></span>
-            <span className="custom-control-description">Green Button</span>
+            <span className="custom-control-description">Button 1</span>
           </label>
           <label className="custom-control custom-radio">
             <input id="radio2" name="radio" type="radio" className="custom-control-input" value="2" onClick={this.buttonChange}/>
             <span className="custom-control-indicator" ></span>
-            <span className="custom-control-description">Offers Button</span>
+            <span className="custom-control-description">Button 2</span>
           </label>
           <label className="custom-control custom-radio">
             <input id="radio3" name="radio" type="radio" className="custom-control-input" value="1" onClick={this.buttonChange}/>
             <span className="custom-control-indicator" ></span>
-            <span className="custom-control-description">White Button</span>
+            <span className="custom-control-description">Button 3</span>
           </label>
           <label className="custom-control custom-radio">
             <input id="radio4" name="radio" type="radio" className="custom-control-input" value="3" onClick={this.buttonChange}/>

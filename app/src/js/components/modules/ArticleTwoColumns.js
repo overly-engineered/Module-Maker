@@ -12,9 +12,13 @@
       return {__html: this.props.currentContent.bodyCopy};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = '848779-nyetimber-2';
-      this.props.currentContent.bodyCopy = 'Lorem ipsum Do dolore aliqua veniam dolor irure sint veniam reprehenderit Ut fugiat occaecat ad cupidatat aliqua commodo cupidatat dolore Duis Duis Excepteur aliqua sint aute qui commodo Duis magna Duis elit occaecat sunt veniam adipisicing do dolor sed qui laboris consequat commodo minim dolore fugiat id enim in fugiat mollit consequat culpa ea enim incididunt est consectetur Duis non cupidatat cillum cillum nostrud qui minim dolore Excepteur labore voluptate officia tempor do Excepteur adipisicing anim exercitation voluptate nulla nostrud deserunt nisi nulla veniam est dolore magna esse occaecat consequat enim proident aliquip exercitation pariatur et dolor in ad laboris ut sed sunt laborum adipisicing id minim veniam eiusmod est elit proident reprehenderit aliqua in proident sunt magna Excepteur.';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = '848779-nyetimber-2';
+        this.props.currentContent.bodyCopy = 'Lorem ipsum Do dolore aliqua veniam dolor irure sint veniam reprehenderit Ut fugiat occaecat ad cupidatat aliqua commodo cupidatat dolore Duis Duis Excepteur aliqua sint aute qui commodo Duis magna Duis elit occaecat sunt veniam adipisicing do dolor sed qui laboris consequat commodo minim dolore fugiat id enim in fugiat mollit consequat culpa ea enim incididunt est consectetur Duis non cupidatat cillum cillum nostrud qui minim dolore Excepteur labore voluptate officia tempor do Excepteur adipisicing anim exercitation voluptate nulla nostrud deserunt nisi nulla veniam est dolore magna esse occaecat consequat enim proident aliquip exercitation pariatur et dolor in ad laboris ut sed sunt laborum adipisicing id minim veniam eiusmod est elit proident reprehenderit aliqua in proident sunt magna Excepteur.';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
@@ -38,7 +42,7 @@
 
             <div className="col-sm-4" ref="row">
 
-              <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+              <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
 
             </div>
 

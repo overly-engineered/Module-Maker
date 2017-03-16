@@ -11,6 +11,9 @@ var SignIn = React.createClass({
   handleLogIn: function(e){
     this.props.signIn();
   },
+  handleResetPassword: function(e){
+    this.props.passwordReset();
+  },
   render: function() {
     return (
       <form>
@@ -24,6 +27,7 @@ var SignIn = React.createClass({
           <input type="password" className="form-control" id="LoginPassword" placeholder="Password" />
         </div>
         <div onClick={this.handleLogIn} className="btn btn-primary">Submit</div>
+        <div onClick={this.handleResetPassword} className="btn btn-info ml-1">Reset Password</div>
       </form>
     );
   }

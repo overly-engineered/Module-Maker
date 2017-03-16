@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+	
+                                                  
+	 __  __           _       _        __  __       _             
+	|  \/  |         | |     | |      |  \/  |     | |            
+	| \  / | ___   __| |_   _| | ___  | \  / | __ _| | _____ _ __ 
+	| |\/| |/ _ \ / _` | | | | |/ _ \ | |\/| |/ _` | |/ / _ \ '__|
+	| |  | | (_) | (_| | |_| | |  __/ | |  | | (_| |   <  __/ |   
+	|_|  |_|\___/ \__,_|\__,_|_|\___| |_|  |_|\__,_|_|\_\___|_|   
+	                                                  
+
+			Created for Waitrose By James Pettman ©2017
+						    Version 0.73.1
+
+	-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=960, initial-scale=1">
+    <title>Waitrose ModuleMaker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="ss/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="jumbotron text-center m-b-0">
+        <h1><span>Waitrose Specialist Shops</span> ModuleMaker</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <a href="ss/" class="panel">
+                	<img src="SS.jpg" alt="">
+                    <h2>Waitrose</h2>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="tmg/" class="panel small">
+                	<img src="TMG.png" alt="">
+                    <h2>TMG</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+    @font-face{font-family:WaitroseLogofont;src:url("ss/fonts/WaitroseLogofont.eot");src:url("ss/fonts/WaitroseLogofont.eot?#iefix") format("embedded-opentype"),url("ss/fonts/WaitroseLogofont.woff") format("woff"),url("ss/fonts/WaitroseLogofont.TTF") format("truetype"),url("ss/fonts/WaitroseLogofont.svg") format("svg");font-weight:normal;font-style:normal}
+        .panel {
+            position: relative;
+        }
+    	.panel img{
+			width:100%;
+            border:10px solid #ededec;
+    	}
+        .panel h2 {
+            position: absolute;
+            text-align: center;
+            top:0;
+            bottom:0;
+            height:65px;
+            margin: auto;
+            width: 100%;
+            color:white;
+            font-size: 65px;
+            font-family: WaitroseLogoFont;
+        }
+        .panel h2::after {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 6px;
+            bottom: -7px;
+            left: 0;
+            right:0;
+            margin:auto;
+            background-color: #fff;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        .panel.small h2::after {
+            width:139px;
+        }
+        .panel:hover h2::after {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    </style>
+</body>
+
+</html>

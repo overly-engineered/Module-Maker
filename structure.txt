@@ -10,14 +10,7 @@
 	<MainSection>
 		<ModuleView>
 			<ModuleDemo>
-				<Card />
-				<Feature />
-				<Hero />
-				<MenuPanel />
-				<Panel />
-				<PanelReveal />
-				<ProductOfTheWeek />
-				<WhatsTrending />
+				<Components />
 			</ModuleDemo>
 		</ModuleView>
 		<ModuleEdit>
@@ -30,5 +23,6 @@
 		</MoudleEdit>
 	</MainSection>
 	<CodeModal />
+	<HelpModal />
 	<SignIn />
 </ModuleMaker>

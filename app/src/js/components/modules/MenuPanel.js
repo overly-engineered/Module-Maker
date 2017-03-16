@@ -85,7 +85,7 @@
                         </div>
                         <p className="menu-panel__text__cta" dangerouslySetInnerHTML={this.createCta()}/>
                         <div className="menu-panel__image">
-                            <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+                            <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
                         </div>
                         
                     </a>

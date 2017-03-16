@@ -65,11 +65,7 @@ var RoundelContent = React.createClass({
 
     }
 
-    return (
-      <div>
-        <div className="form-group">
-          <label htmlFor="roundelType">RoundelType:</label>
-          <select className="form-control" id="roundelType" onChange={this.handleEdit}>
+    var roundelString = <select className="form-control" id="roundelType" onChange={this.handleEdit}>
             <option value="1">Standard</option>
             <option value="2">Save Value</option>
             <option value="3">Save Value Fraction</option>
@@ -78,7 +74,20 @@ var RoundelContent = React.createClass({
             <option value="6">Percent Off</option>
             <option value="8">Green</option>
             <option value="9">Grey</option>
-          </select>
+          </select>;
+
+    if(this.props.currentSite == 3){
+      roundelString = <select className="form-control" id="roundelType" onChange={this.handleEdit}>
+        <option value="1">Standard</option>
+        <option value="2">Save Value</option>
+      </select>
+    }
+
+    return (
+      <div>
+        <div className="form-group">
+          <label htmlFor="roundelType">RoundelType:</label>
+          {roundelString}
         </div>
         {inputString}
       </div>

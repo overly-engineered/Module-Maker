@@ -12,8 +12,12 @@
       return {__html: this.props.currentContent.heading};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'c-in-lf-fw-poultry';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'c-in-lf-fw-poultry';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
@@ -38,7 +42,7 @@
           			</div>
 
           			<div className="panel__image--border">
-          				<img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+          				<img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
           			</div>
 
           		</a>

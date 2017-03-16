@@ -6,7 +6,12 @@
   var TextLink = React.createClass({
 
     render: function() {
-      var ctaClass = 'btn--primary btn--full';
+      if(this.props.currentSite == 3){
+        var ctaClass = 'btn--brand btn--full';
+      } else {
+        var ctaClass = 'btn--primary btn--full';
+      }
+      
       if(this.props.currentContent.ctaType == 1){
         ctaClass = 'btn btn--full';
       } else if(this.props.currentContent.ctaType == 2){

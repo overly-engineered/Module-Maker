@@ -10,8 +10,9 @@ var ModuleItem = React.createClass({
   },
 
   render: function() {
+
     return (
-      <a href="#" onClick={this.handleModuleView} className="list-group-item list-group-item-action" key={this.props.key}>{this.props.name} <small> - {this.props.description}</small></a>
+      <a ref="addedItem" href="#" onClick={this.handleModuleView} className="list-group-item list-group-item-action" key={this.props.key}>{this.props.name} <small> - {this.props.description}</small></a>
     );
   }
 

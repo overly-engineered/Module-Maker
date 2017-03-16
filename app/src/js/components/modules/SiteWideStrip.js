@@ -17,15 +17,7 @@
     render: function() {
       var html = '';
       var styles = {height: '40px'};
-      if(this.props.currentSite == 0){
-        html = 
-            <section className="notificationBar" id="deliveryFreeBar">
-              <p style={styles} ref="row">
-                <span className="deliveryBarFirst">Standard delivery on all orders</span>
-                <span className="deliveryBarSecond"><img className="cc-icon" src="http://www.waitrose.com/content/dam/waitrose/cellar/design/icons/cc-icon.png"/><span>Click &amp; Collect at your local store</span></span>
-              </p>
-            </section>
-      } else if(this.props.currentSite == 1){
+      if(this.props.currentSite == 1){
         html = 
           <section className="notificationBar" id="deliveryFreeBar">                        
             <p style={styles} ref="row">
@@ -34,7 +26,7 @@
               <input type="hidden" minutes="0" hours="18" id="localTimeHidden" name="initialCountDown"/> 
             </p>
           </section>;
-      } else {
+      } else if(this.props.currentSite == 2){
         html = 
           <section className="notificationBar" id="deliveryFreeBar">  
             <p style={styles} ref="row">
@@ -43,6 +35,23 @@
               <input type="hidden" minutes="0" hours="12" id="localTimeHidden" name="initialCountDown"/>
             </p>
           </section>
+      } else if(this.props.currentSite == 3){
+        html = <section className="notificationBar" id="deliveryFreeBar">  
+            <p style={styles} ref="row">
+              <span><img src="https://s7g10.scene7.com/is/image/waitrose/t-w-van-white?fmt=png-alpha"/>
+              Standard delivery on all orders</span> |
+              <span><img src="https://s7g10.scene7.com/is/image/waitrose/t-w-click-collect-white?fmt=png-alpha"/>
+              Click &amp; Collect at your local Waitrose</span>
+            </p>
+          </section>
+      } else {
+        html = 
+            <section className="notificationBar" id="deliveryFreeBar">
+              <p style={styles} ref="row">
+                <span className="deliveryBarFirst">Standard delivery on all orders</span>
+                <span className="deliveryBarSecond"><img className="cc-icon" src="http://www.waitrose.com/content/dam/waitrose/cellar/design/icons/cc-icon.png"/><span>Click &amp; Collect at your local store</span></span>
+              </p>
+            </section>
       }
       return (
         <div className="rowGrid">

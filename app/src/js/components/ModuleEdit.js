@@ -30,27 +30,27 @@ var ModuleEdit = React.createClass({
           <div id="collapse" className="collapse" role="tabpanel" aria-labelledby="heading">
             <div className="card-block">
               <label className="custom-control custom-radio">
-                <input id="radio1" name="radio" type="radio" className="custom-control-input" value="col-xs-12" onClick={this.sizeChange}/>
+                <input id="radio1" name="radio" type="radio" className="custom-control-input" value="col-sm-12" onClick={this.sizeChange}/>
                 <span className="custom-control-indicator" ></span>
                 <span className="custom-control-description">Full Width</span>
               </label>
               <label className="custom-control custom-radio">
-                <input id="radio2" name="radio" type="radio" className="custom-control-input" value="col-xs-8" onClick={this.sizeChange}/>
+                <input id="radio2" name="radio" type="radio" className="custom-control-input" value="col-sm-8" onClick={this.sizeChange}/>
                 <span className="custom-control-indicator" ></span>
                 <span className="custom-control-description">Two Third Width</span>
               </label>
               <label className="custom-control custom-radio">
-                <input id="radio3" name="radio" type="radio" className="custom-control-input" defaultChecked="checked" value="col-xs-6" onClick={this.sizeChange}/>
+                <input id="radio3" name="radio" type="radio" className="custom-control-input" defaultChecked="checked" value="col-sm-6" onClick={this.sizeChange}/>
                 <span className="custom-control-indicator" ></span>
                 <span className="custom-control-description">Half Width</span>
               </label>
               <label className="custom-control custom-radio">
-                <input id="radio4" name="radio" type="radio" className="custom-control-input" value="col-xs-4" onClick={this.sizeChange}/>
+                <input id="radio4" name="radio" type="radio" className="custom-control-input" value="col-sm-4" onClick={this.sizeChange}/>
                 <span className="custom-control-indicator" ></span>
                 <span className="custom-control-description">Third Width</span>
               </label>
               <label className="custom-control custom-radio">
-                <input id="radio5" name="radio" type="radio" className="custom-control-input" value="col-xs-3" onClick={this.sizeChange}/>
+                <input id="radio5" name="radio" type="radio" className="custom-control-input" value="col-sm-3" onClick={this.sizeChange}/>
                 <span className="custom-control-indicator" ></span>
                 <span className="custom-control-description">Quarter Width</span>
               </label>
@@ -89,7 +89,7 @@ var ModuleEdit = React.createClass({
 
           <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingFour">
             <div className="card-block">
-              <RoundelEdit currentContent={this.props.currentContent} editMade={this.props.editMade}></RoundelEdit>
+              <RoundelEdit currentContent={this.props.currentContent} editMade={this.props.editMade} currentSite={this.props.currentSite}></RoundelEdit>
             </div>
           </div>
         </div>;

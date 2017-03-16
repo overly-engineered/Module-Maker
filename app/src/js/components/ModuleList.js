@@ -8,48 +8,90 @@ var React = require('react'),
 var ModuleList = React.createClass({
 
   render: function() {
+    var moduleItems = [];
     if(this.props.view == 'subMenu'){
-      var moduleItems = this.props.modules.map(function(item) {
-        if(item.group == this.props.currentModule.groupIndex){
-          return <ModuleItem key={item.id}
-                          name={item.name}
+      for(var index in this.props.modulesObj){
+        if(this.props.modulesObj[index].group == this.props.currentModule.groupIndex){
+          if(this.props.currentSite == 3){
+            if(this.props.modulesObj[index].tmg == true){
+              moduleItems.push(
+                <ModuleItem key={index}
+                          name={this.props.modulesObj[index].name}
                           viewModule={this.props.viewModule}
-                          description={item.description}/>
-        } else {
-          return '';
+                          description={this.props.modulesObj[index].description}/>
+              );
+            }
+          } else {
+            moduleItems.push(
+                <ModuleItem key={index}
+                          name={this.props.modulesObj[index].name}
+                          viewModule={this.props.viewModule}
+                          description={this.props.modulesObj[index].description}/>
+            )
+          }
         }
-        
-      }.bind(this))
+      }
+
     } else {
-      var moduleItems = this.props.modules.map(function(item) {
 
-        if(item.hasOwnProperty('group')){
-          return '';
-        } else if(item.category){
+      var moduleItems= [];
+      
+      for(var index in this.props.modulesObj){
 
-          return <ModuleCategory key={item.id}
-                          name={item.name}
-                          width={item.width}
+        if(!this.props.modulesObj[index].hasOwnProperty('group') && this.props.modulesObj[index].category){
+
+          if(this.props.currentSite == 3){
+            if(this.props.modulesObj[index].tmg == true) {
+              moduleItems.push( <ModuleCategory key={index}
+                          name={this.props.modulesObj[index].name}
+                          width={this.props.modulesObj[index].width}
                           viewModule={this.props.viewModule}
-                          description={item.description}
-                          multiCta = {item.multiCta}
-                          depth = {item.depth}
-                          sizeable = {item.sizeable}
+                          description={this.props.modulesObj[index].description}
+                          multiCta = {this.props.modulesObj[index].multiCta}
+                          depth = {this.props.modulesObj[index].depth}
+                          sizeable = {this.props.modulesObj[index].sizeable}
                           viewSubMenu={this.props.viewSubMenu}
-                          groupIndex={item.groupIndex}/>
-
-        } else {
-          return <ModuleItem key={item.id}
-                          name={item.name}
-                          width={item.width}
+                          groupIndex={this.props.modulesObj[index].groupIndex}/>);
+            }
+          } else {
+            moduleItems.push( <ModuleCategory key={index}
+                          name={this.props.modulesObj[index].name}
+                          width={this.props.modulesObj[index].width}
                           viewModule={this.props.viewModule}
-                          description={item.description}
-                          multiCta = {item.multiCta}
-                          depth = {item.depth}
-                          sizeable = {item.sizeable} />
+                          description={this.props.modulesObj[index].description}
+                          multiCta = {this.props.modulesObj[index].multiCta}
+                          depth = {this.props.modulesObj[index].depth}
+                          sizeable = {this.props.modulesObj[index].sizeable}
+                          viewSubMenu={this.props.viewSubMenu}
+                          groupIndex={this.props.modulesObj[index].groupIndex}/>);
+          }
+
+        } else if(!this.props.modulesObj[index].hasOwnProperty('group')){
+
+          if(this.props.currentSite == 3){
+            if(this.props.modulesObj[index].tmg == true) {
+              moduleItems.push( <ModuleItem key={index}
+                            name={this.props.modulesObj[index].name}
+                            width={this.props.modulesObj[index].width}
+                            viewModule={this.props.viewModule}
+                            description={this.props.modulesObj[index].description}
+                            multiCta = {this.props.modulesObj[index].multiCta}
+                            depth = {this.props.modulesObj[index].depth}
+                            sizeable = {this.props.modulesObj[index].sizeable} />);
+            }
+          } else {
+            moduleItems.push( <ModuleItem key={index}
+                            name={this.props.modulesObj[index].name}
+                            width={this.props.modulesObj[index].width}
+                            viewModule={this.props.viewModule}
+                            description={this.props.modulesObj[index].description}
+                            multiCta = {this.props.modulesObj[index].multiCta}
+                            depth = {this.props.modulesObj[index].depth}
+                            sizeable = {this.props.modulesObj[index].sizeable} />);
+          }
+
         }
-        
-      }.bind(this))
+      }
     }
     return (
       <ul className="list-group">

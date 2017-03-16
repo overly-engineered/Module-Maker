@@ -16,9 +16,13 @@
       return {__html: this.props.currentContent.bodyCopy};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'f-au-nav-purple';
-      this.props.currentContent.currentColumnSize = 'col-xs-6';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'f-au-nav-purple';
+        this.props.currentContent.currentColumnSize = 'col-xs-6';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       
@@ -39,7 +43,7 @@
             <a href={this.props.currentContent.ctaDetails[0].ctaLink} onClick={this.props.handleClick} title={this.props.currentContent.ctaDetails[0].ctaDescription}>
 
               <div className="panel__image">
-                  <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+                  <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
               </div>
 
               <div className="panel__text">

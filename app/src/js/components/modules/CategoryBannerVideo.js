@@ -39,9 +39,14 @@
       return {__html: this.props.currentContent.videoCode}
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'c-aw-food-wine-cb';
-      this.props.currentContent.subHeading = 'Shop wine types';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'c-aw-food-wine-cb';
+        this.props.currentContent.subHeading = 'Shop wine types';
+        this.props.currentContent.ctaType = 3;
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       ;(function($){
@@ -122,7 +127,7 @@
               <span className="roundel"></span>
             </div>
             <div className="signpost__image">
-              <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+              <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
             </div>
           </div>
           <div className="signpost__body">
@@ -142,7 +147,7 @@
             <div className="mod-col">
               <div className="signpost__video" onClick={this.handleClick}>
                   
-                    <img src={this.props.currentContent.videoThumbnail} width="295" height="166" className="videoThumb" />
+                    <img src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} width="295" height="166" className="videoThumb" />
                     <span className="videoThumb"></span>
                 
                     <div className="videoOverlay" style={style} itemProp="video" itemScope itemType="http://schema.org/VideoObject" >

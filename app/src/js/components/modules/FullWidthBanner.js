@@ -15,9 +15,13 @@
       return {__html: this.props.currentContent.bodyCopy};
     },
     componentWillMount: function(){
-      this.props.currentContent.image = 'k-sk-cbgfeature';
-      this.props.currentContent.bodyCopy = 'Shop by coffee preference, lifestyle and learn all you need  to know about coffee machines with our buying guide.';
-      this.props.editMade(this.props.currentContent);
+      if(!this.props.currentContent.savedState){
+        this.props.currentContent.image = 'k-sk-cbgfeature';
+        this.props.currentContent.bodyCopy = 'Shop by coffee preference, lifestyle and learn all you need  to know about coffee machines with our buying guide.';
+        this.props.editMade(this.props.currentContent);
+      } else {
+        this.props.currentContent.savedState = false;
+      }
     },
     componentDidMount: function(){
       this.refs.image.getDOMNode().onload = function() {
@@ -96,7 +100,7 @@
 
                     <div className="hero__image">
 
-                        <img ref="image" src={"//s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
+                        <img ref="image" src={"https://s7g10.scene7.com/is/image/waitrose/"+ this.props.currentContent.image} alt={this.props.currentContent.imageDescription} />
 
                     </div>
 

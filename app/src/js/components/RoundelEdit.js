@@ -18,7 +18,7 @@ var RoundelEdit = React.createClass({
   render: function() {
     var roundelDropDown = '';
     if(this.props.currentContent.roundel){
-      roundelDropDown = <RoundelType currentContent={this.props.currentContent} editMade={this.props.editMade}/>
+      roundelDropDown = <RoundelType currentContent={this.props.currentContent} editMade={this.props.editMade} currentSite={this.props.currentSite}/>
     } else {
       this.props.currentContent.roundelType = 1;
     }

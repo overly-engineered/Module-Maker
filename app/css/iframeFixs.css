@@ -18,30 +18,53 @@ a.cta, p.cta {
 }
 @font-face {
   font-family:WaitroseRegular; 
-  src: url("../fonts/Waitrose-Regular.eot"); 
-  src: url("../fonts/Waitrose-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Waitrose-Regular.woff") format('woff'), url("../fonts/Waitrose-Regular.TTF") format('truetype'), url("../fonts/Waitrose-Regular.svg") format('svg'); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Regular.eot"); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Regular.eot?#iefix") format('embedded-opentype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Regular.woff") format('woff'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Regular.TTF") format('truetype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Regular.svg") format('svg'); 
   font-weight: normal; font-style: normal;}
 
  @font-face {
   font-family:WaitroseBold; 
-  src: url("../fonts/Waitrose-Bold.eot"); 
-  src: url("../fonts/Waitrose-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Waitrose-Bold.woff") format('woff'), url("../fonts/Waitrose-Bold.TTF") format('truetype'), url("../fonts/Waitrose-Bold.svg") format('svg'); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Bold.eot"); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Bold.eot?#iefix") format('embedded-opentype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Bold.woff") format('woff'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Bold.TTF") format('truetype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Bold.svg") format('svg'); 
   font-weight: normal; font-style: normal;} 
 
 @font-face {
   font-family:WaitroseLight; 
-  src: url("../fonts/Waitrose-Light.eot"); 
-  src: url("../fonts/Waitrose-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Waitrose-Light.woff") format('woff'), url("../fonts/Waitrose-Light.TTF") format('truetype'), url("../fonts/Waitrose-Light.svg") format('svg'); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Light.eot"); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Light.eot?#iefix") format('embedded-opentype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Light.woff") format('woff'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Light.TTF") format('truetype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/Waitrose-Light.svg") format('svg'); 
   font-weight: normal; font-style: normal;}
 
 @font-face {
   font-family:WaitroseLogofont; 
-  src: url("../fonts/WaitroseLogofont.eot"); 
-  src: url("../fonts/WaitroseLogofont.eot?#iefix") format('embedded-opentype'), url("../fonts/WaitroseLogofont.woff") format('woff'), url("../fonts/WaitroseLogofont.TTF") format('truetype'), url("../fonts/WaitroseLogofont.svg") format('svg'); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/WaitroseLogofont.eot"); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/WaitroseLogofont.eot?#iefix") format('embedded-opentype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/WaitroseLogofont.woff") format('woff'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/WaitroseLogofont.TTF") format('truetype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/WaitroseLogofont.svg") format('svg'); 
   font-weight: normal; font-style: normal;}
 
 @font-face {
   font-family:CrimsonTextItalic; 
-  src: url("../fonts/CrimsonText-Italic.eot"); 
-  src: url("../fonts/CrimsonText-Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/CrimsonText-Italic.woff") format('woff'), url("../fonts/CrimsonText-Italic.ttf") format('truetype'), url("../fonts/CrimsonText-Italic.svg") format('svg'); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/CrimsonText-Italic.eot"); 
+  src: url("https://specialist-shops-module-maker.firebaseapp.com/fonts/CrimsonText-Italic.eot?#iefix") format('embedded-opentype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/CrimsonText-Italic.woff") format('woff'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/CrimsonText-Italic.ttf") format('truetype'), url("https://specialist-shops-module-maker.firebaseapp.com/fonts/CrimsonText-Italic.svg") format('svg'); 
   font-weight: normal; font-style: normal;}
+@font-face {
+  font-family: 'Telesans Text Web';
+  src: url('https://specialist-shops-module-maker.firebaseapp.com/fonts/Telesans Text-Bold.otf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Telesans Text Web';
+  src: url('https://specialist-shops-module-maker.firebaseapp.com/fonts/Telesans Text-Bold Italic.otf') format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Telesans Text Web';
+  src: url('https://specialist-shops-module-maker.firebaseapp.com/fonts/Telesans Text-Regular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
